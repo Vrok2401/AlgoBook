@@ -5,12 +5,11 @@ using namespace std;
 void gnome_sort(int arr[], int len) {
 	int i = 0;
 	while (i < len) {
-		if (i == 0) {
+		if (i == 0) 
 			i++;
-		}
-		if (arr[i] >= arr[i - 1]) {
+
+		if (arr[i] >= arr[i - 1]) 
 			i++;
-		}
 		else {
 			int a = arr[i];
 			int b = arr[i - 1];
@@ -24,12 +23,10 @@ void gnome_sort(int arr[], int len) {
 	cout << "Array after Gnome sort: ";
 	for (int i = 0; i < len; i++) {
 		cout << arr[i];
-		if (i < len) {
+		if (i < len) 
 			cout << ", ";
-		}
-		else {
+		else 
 			cout << "\n";
-		}
 	}
 }
 
@@ -43,12 +40,10 @@ void main() {
 	cout << "Array before Gnome sort: ";
 	for (int i = 0; i < 4; i++) {
 		cout << arr[i];
-		if (i < 3) {
+		if (i < 3) 
 			cout << ", ";
-		}
-		else {
+		else 
 			cout << "\n";
-		}
 	}
 
 	gnome_sort(arr, 4);
